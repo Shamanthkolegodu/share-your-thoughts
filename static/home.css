@@ -16,3 +16,23 @@
 .icon-bar a:hover {
   background-color: #000; /* Add a hover color */
 }
+.column_left {
+  float: left;
+  width: 15%;
+  background-color: #ccffff;
+}
+.column_middle {
+  float: left;
+  width: 60%;
+}
+.column_right {
+  float: left;
+  width: 25%;
+  background-color: #ccffff;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
