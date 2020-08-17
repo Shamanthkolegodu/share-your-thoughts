@@ -9,14 +9,50 @@
     />
   </head>
   <body>
-    <div class="icon-bar">
-      <a href="#">Home</a>
-      <a href="#">about</a>
+    <div class="header">
+      <h2>Share your thoughts</h2>
     </div>
     <div class="row">
-      <div class="column_left" id="column_1">hello</div>
-      <div class="column_middle" id="column_1">how</div>
-      <div class="column_right" id="column_1">are u?</div>
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>Some text..</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height: 200px;">Image</div>
+          <p>Some text..</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="hero-image">
+            <div class="hero-text"></div>
+          </div>
+
+          <div class="fakeimg" id="hero-image" style="height: 150px;"></div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">Image</div>
+          <br />
+          <div class="fakeimg">Image</div>
+          <br />
+          <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Footer</h2>
     </div>
 
     <script src="{{url_for('static', filename='home.js')}}"></script>
