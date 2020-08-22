@@ -34,13 +34,13 @@ body {
 /* Left column */
 .leftcolumn {
   float: left;
-  width: 73%;
+  width: 78%;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 20%;
   padding-left: 25px;
 }
 
