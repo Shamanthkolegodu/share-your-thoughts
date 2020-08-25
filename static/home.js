@@ -1,32 +1,23 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+$(document).ready(function () {
+  // Activate the Carousel. Pause it when you move the mouse over it
+  $("#myCarousel").carousel({ interval: 500, pause: "hover" });
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
+  // Enable Carousel Indicators
+  $(".item1").click(function () {
+    $("#myCarousel").carousel(0);
+  });
+  $(".item2").click(function () {
+    $("#myCarousel").carousel(1);
+  });
+  $(".item3").click(function () {
+    $("#myCarousel").carousel(2);
+  });
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
+  // Enable Carousel Controls
+  $(".carousel-control-prev").click(function () {
+    $("#myCarousel").carousel("prev");
+  });
+  $(".carousel-control-next").click(function () {
+    $("#myCarousel").carousel("next");
+  });
+});
